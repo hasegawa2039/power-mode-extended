@@ -1,43 +1,16 @@
 import { registerPlugin } from '@capacitor/core'
 
-const PowerMode = registerPlugin("PowerModeExtended");
+export const PowerMode = registerPlugin("PowerModeExtended");
 
-const logs = []
-const pushLogs = (data) => {
-    const now = new Date();
-    const formattedDate = `${now.getFullYear()}/${now.getMonth()+1}/${now.getDate()} ${now.getHours().toString().padStart(2, 0)}:${now.getMinutes().toString().padStart(2, 0)}:${now.getSeconds().toString().padStart(2, 0)}.${now.getMilliseconds().toString().padStart(3, 0)}`;
-    logs.push({
-        time: formattedDate,
-        data: data
-    });
-    document.querySelector("#logs").textContent = JSON.stringify(logs, undefined, 2);
-}
-
-const getBatterySaverStatus = () => {
-    return PowerMode.lowPowerModeEnabled()
-}
-const updateBatterySaverStatus = () => {
-    getBatterySaverStatus()
-    .then((data) => {
-        document.querySelector("#batterySaveStatus").textContent = data.lowPowerModeEnabled
-    })
-    pushLogs("updated batterySaveStatus");
-}
-const openPowerSettings = () => {
-    PowerMode.openPowerSettings()
-    .then(() => {
-        console.log("opening power settings")
-        pushLogs("opend batterySaveStatus");
-    })
-    .catch((err) => {
-        console.error(err);
-        pushLogs("can't opend batterySaveStatus");
-    })
-    pushLogs("opend batterySaveStatus");
-}
-
-window.addEventListener("DOMContentLoaded", () => {
-    updateBatterySaverStatus()
-    document.querySelector("#updateBatterySaverStatus").addEventListener("click", updateBatterySaverStatus)
-    document.querySelector("#openPowerSettings").addEventListener("click", openPowerSettings)
+/*
+// Returns the status of power saving mode
+PowerMode.lowPowerMode()
+.then(data => {
+    // It is displayed as { lowPowerModeEnabled: true/false }
+    console.log(data)
 })
+
+// Open the battery settings window.
+// ※iOS does not recommend going directly to the battery settings screen, so jump to the settings home screen.
+PowerMode.openPowerSettings()
+*/
