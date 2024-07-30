@@ -6,4 +6,7 @@ export class PowerModeWeb extends WebPlugin implements PowerModePlugin {
   async lowPowerModeEnabled(): Promise<{ lowPowerModeEnabled: boolean }> {
     return { lowPowerModeEnabled: false };
   }
+  async openPowerSettings(): Promise<void>{
+    return;
+  }
 }

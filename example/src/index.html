@@ -2,13 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <title>Awesome Capacitor App</title>
+    <title>PowerModeExtended Example</title>
     <meta
       name="viewport"
       content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .block{
+        margin: 2rem 1rem;
+      }
+      button{
+        padding: .5rem 1rem;
+      }
+      pre{
+        margin: 1rem;
+      }
+    </style>
 
     <script
       type="module"
@@ -25,8 +40,20 @@
     <meta name="theme-color" content="#31d53d" />
   </head>
   <body>
-    <capacitor-welcome></capacitor-welcome>
+    <div class="block">
+      <h3>Update BatterySaveStatus</h3>
+      <button id="updateBatterySaverStatus">update</button>
+      <br>
+      BatterySaveStatus: <span id="batterySaveStatus"></span>
+    </div>
+    <div class="block">
+      <h3>Open PowerSettings</h3>
+      <button id="openPowerSettings">open</button>
+    </div>
+    <pre id="logs">
 
-    <script src="./js/capacitor-welcome.js" type="module"></script>
+    </pre>
+
+    <script src="./js/power-mode-example.js" type="module"></script>
   </body>
 </html>

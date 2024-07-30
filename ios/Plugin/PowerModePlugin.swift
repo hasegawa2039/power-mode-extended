@@ -11,4 +11,18 @@ public class PowerModePlugin: CAPPlugin {
         let lowPowerModeEnabled = ProcessInfo.processInfo.isLowPowerModeEnabled
         call.resolve(["lowPowerModeEnabled": lowPowerModeEnabled])
     }
+    @objc func openPowerSettings(_ call: CAPPluginCall) {
+        DispatchQueue.main.async {
+            if let url = URL(string: UIApplication.openSettingsURLString) {
+                if UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    call.resolve()
+                } else {
+                    call.reject("Unable to open settings")
+                }
+            } else {
+                call.reject("Invalid URL")
+            }
+        }
+    }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "power-mode",
+  "name": "power-mode-extended",
   "version": "5.0.0",
   "description": "Capacitor Plugin to Detect Low Power Mode",
   "main": "dist/plugin.cjs.js",
@@ -11,16 +11,16 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "PowerMode.podspec"
+    "PowerModeExtended.podspec"
   ],
-  "author": "Dan Adler",
+  "author": "t.hasegawa",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danbunkr/power-mode.git"
+    "url": "git+https://github.com/hasegawa2039/power-mode-extended.git"
   },
   "bugs": {
-    "url": "https://github.com/danbunkr/power-mode/issues"
+    "url": "https://github.com/hasegawa2039/power-mode-extended/issues"
   },
   "keywords": [
     "capacitor",
