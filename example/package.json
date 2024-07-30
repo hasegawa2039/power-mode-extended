@@ -13,15 +13,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@capacitor/core": "^5.0.0",
-    "@capacitor/camera": "^5.0.0",
-    "@capacitor/splash-screen": "^5.0.0",
-    "power-mode-extended": "file:..",
-    "@capacitor/ios": "^5.0.0",
-    "@capacitor/android": "^5.0.0"
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
+    "power-mode-extended": "file:.."
   },
   "devDependencies": {
-    "@capacitor/cli": "^5.0.0",
+    "@capacitor/cli": "^6.0.0",
     "vite": "^2.9.13"
   },
   "author": "",
