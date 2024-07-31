@@ -1,11 +1,13 @@
-# power-mode
+# capacitor-power-mode-extended
 
-Capacitor Plugin to Detect Low Power Mode
+The [`power-mode`](https://github.com/AdlerJS/power-mode) Capacitor plugin is forked. In addition to detecting power-saving mode, it can be used to go to the battery settings screen.
 
 ## Install
 
+You need @capacitor/core@^6.0.0
+
 ```bash
-npm install power-mode
+npm install capacitor-power-mode-extended
 npx cap sync
 ```
 
