@@ -1,7 +1,7 @@
 {
-  "name": "power-mode-extended",
-  "version": "6.0.0",
-  "description": "Capacitor Plugin to Detect Low Power Mode",
+  "name": "capacitor-power-mode-extended",
+  "version": "0.1.0",
+  "description": "The `power-mode` Capacitor plugin is forked. In addition to detecting power-saving mode, it can be used to go to the battery settings screen.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hasegawa2039/power-mode-extended.git"
+    "url": "https://github.com/hasegawa2039/power-mode-extended.git"
   },
   "bugs": {
     "url": "https://github.com/hasegawa2039/power-mode-extended/issues"
