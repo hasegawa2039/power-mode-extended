@@ -1,6 +1,6 @@
 {
   "name": "capacitor-power-mode-extended",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The `power-mode` Capacitor plugin is forked. In addition to detecting power-saving mode, it can be used to go to the battery settings screen.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

@@ -31,7 +31,6 @@ const openPowerSettings = () => {
         console.error(err);
         pushLogs("can't opend batterySaveStatus");
     })
-    pushLogs("opend batterySaveStatus");
 }
 
 window.addEventListener("DOMContentLoaded", () => {
