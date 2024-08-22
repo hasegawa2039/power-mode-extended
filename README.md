@@ -18,7 +18,7 @@ import { registerPlugin } from '@capacitor/core'
 export const PowerMode = registerPlugin("PowerModeExtended");
 
 // Returns the status of power saving mode
-PowerMode.lowPowerMode()
+PowerMode.lowPowerModeEnabled()
 .then(data => {
     // It is displayed as { lowPowerModeEnabled: true/false }
     console.log(data)
